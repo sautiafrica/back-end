@@ -4,9 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+		"test": "jest --watch --verbose",
+		"start": "nodemon index.js"  },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Duc Vu",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.0",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.0",
+    "helmet": "^3.18.0",
+    "knex": "^0.16.5",
+    "sqlite3": "^4.0.8"
+  }
 }
